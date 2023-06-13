@@ -1,0 +1,14 @@
+.about{
+    &__text{
+        border-top: 2px solid #fff;
+        padding-top: 6px;
+        text-align: justify;
+        p{
+            cursor: pointer;
+            transition: all ease .5s;
+            &:hover{
+                font-size: 17px;
+            }
+        }
+    }
+}

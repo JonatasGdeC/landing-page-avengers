@@ -1,0 +1,41 @@
+.movies{
+    &__tabs{
+        display: flex;
+        justify-content: space-between;
+
+        button{
+            color: #fff;
+            background-color: transparent;
+            border: transparent;
+            font-size: 18px;
+            margin-bottom: 24px;
+            transition: all ease .5s;
+            cursor: pointer;
+
+            &:hover{
+                font-size: 18.3px;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__content{
+        display: none;
+
+        h2{
+            margin: 16px 0;
+        }
+
+        p{
+            cursor: pointer;
+            transition: all ease .5s;
+            &:hover{
+                font-size: 17px;
+            }
+        }
+
+        &--is-active{
+            display: block;
+        }
+    }
+}

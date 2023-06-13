@@ -1,13 +1,153 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vingadores</title>
-    <link rel="stylesheet" href="./dist/css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vingadores</title>
+  <link rel="stylesheet" href="./dist/css/main.css">
 </head>
 <body>
+    <header class="header">
+      <img class="header__logo" src="./dist/img/logo.png" alt="Logo Vingadores">
+      <ul class="header__list">
+        <li class="header__list__item">
+          <a href="#about">Sobre</a>
+        </li>
+        <li class="header__list__item">
+          <a href="#movies">Filmes</a>
+        </li>
+        <li class="header__list__item">
+          <a href="#faq">Perguntas</a>
+        </li>
+        
+      </ul>
+    </header>
+
+    <section id="about" class="about">
+      <div class="container">
+        <img src="./dist/img/Banner-1.jpg" alt="Banner">
+        <h2 class="title">Sobre</h2>
+        <div class="about__text">
+          <p class="text-small">Bem-vindo ao incrível universo dos Vingadores! Prepare-se para embarcar em uma jornada épica repleta de ação, emoção e heróis extraordinários. Os filmes dos Vingadores são uma série de produções cinematográficas que unem os maiores super-heróis da Marvel em batalhas contra ameaças cósmicas e vilões formidáveis.</p>
+          <p class="text-small">Tudo começa com "Homem de Ferro", quando somos apresentados ao brilhante Tony Stark, um gênio da tecnologia que cria uma armadura poderosa para proteger o mundo. A partir daí, testemunhamos o participamos de um universo compartilhado, repleto de personagens fascinantes.</p>
+          <p class="text-small">"O Incrível Hulk" nos apresenta a história de Bruce Banner, um cientista cuja vida é transformada para sempre quando ele se torna um monstro verde e incontrolável conhecido como Hulk. Em seguida, encontramos o Deus do Trovão em "Thor", enquanto ele luta para provar seu valor e defender Asgard contra inimigos poderosos.</p>
+          <p class="text-small">E então, chega o momento de reunir esses heróis invocados em "Os Vingadores". Capitão América, Viúva Negra, Gavião Arqueiro e o incrível Hulk se juntam a Tony Stark e Thor para enfrentar Loki, um vilão cujos planos malignos ameaçam a Terra. É uma batalha épica que estabelece as bases para uma equipe de super-heróis formidáveis.</p>
+          <p class="text-small">Após o sucesso de "Os Vingadores", a Marvel nos brinda com uma sequência repleta de ação em "Vingadores: Era de Ultron". Nessa continuação, nossos heróis precisam impedir Ultron, uma inteligência artificial implacável que deseja erradicar a humanidade. É uma corrida contra o tempo em que os Vingadores enfrentam desafios cada vez mais perigosos.</p>
+          <p class="text-small">Mas a ameaça não para por aí. "Vingadores: Guerra Infinita" nos apresenta Thanos, um tirano cósmico decidido a reunir as seis Joias do Infinito para trazer equilíbrio ao universo, não importando o custo. Neste filme repleto de ação e emoção, vemos os Vingadores e seus aliados lutando desesperadamente para deter Thanos e salvar a existência.</p>
+          <p class="text-small">E, finalmente, "Vingadores: Ultimato" nos traz a batalha final. Após os eventos devastadores de "Guerra Infinita", os heróis remanescentes devem se unir em uma tentativa desesperada de reverter os efeitos catastróficos de Thanos. É uma jornada emocionante e cheia de reviravoltas que marca o clímax de uma saga de proporções épicas.</p>
+          <p class="text-small">Os filmes dos Vingadores são mais do que simplesmente aventuras de super-heróis. Eles são histórias de coragem, trabalho em equipe e superação, retratando personagens icônicos que se tornaram símbolos de esperança e inspiração para milhões de fãs ao redor do mundo. Prepare-se para mergulhar em um universo repleto de ação e emoção, onde os Vingadores lutam para proteger a Terra e além.</p>
+        </div>      
+      </div>
+    </section>
+
+    <section id="movies" class="movies">
+      <div class="container">
+        <h2 class="title">Filmes</h2>
+        <nav class="movies__tabs">
+          <button data-tab-button="the_avengers">Os Vingadores: The Avengers</button>
+          <button data-tab-button="ultron">Vingadores: Era de Ultron</button>
+          <button data-tab-button="guerra_infinita">Vingadores: Guerra Infinita</button>
+          <button data-tab-button="ultimato">Vingadores: Ultimato</button>
+        </nav>
+
+        <div data-tab-id="the_avengers" class="movies__content movies__content--is-active">
+          <img src="./dist/img/banner_os_vingadores.jfif" alt="Banner filme: Os Vingadores - The Avengers">
+          <h2 class="title--small">Sobre o filme</h2>
+          <p class="text-small">Prepare-se para testemunhar um encontro épico de super-heróis em "Os Vingadores" de 2012. Este filme extraordinário marca um marco na história do cinema, reunindo pela primeira vez alguns dos personagens mais amados e poderosos da Marvel em uma batalha épica contra o mal.</p>
+          <p class="text-small">Dirigido por Joss Whedon, "Os Vingadores" nos leva a um mundo onde o destino da Terra está em perigo. Loki, o astuto e arrogante meio-irmão de Thor, rouba o poderoso Cetro de Loki e planeja conquistar o planeta, levando caos e destruição. Para impedir sua missão maligna, a SHIELD, liderada pelo carismático Nick Fury, reúne uma equipe de heróis convidados.</p>
+          <p class="text-small">Tony Stark, também conhecido como Homem de Ferro, o brilhante bilionário que usa sua genialidade para criar uma armadura imbatível. Steve Rogers, o lendário Capitão América, um soldado do passado que se tornou um símbolo de heroísmo e justiça. Thor, o poderoso Deus do Trovão, trazendo consigo seu martelo místico e uma inteligência inabalável. Bruce Banner, o cientista atormentador cuja transformação em Hulk desencadeia uma força imparável de destruição. Natasha Romanoff, a ágil e furtiva Viúva Negra, uma espiã habilidosa com segredos profundos. E Clint Barton, o Gavião Arqueiro, um arqueiro excepcionalmente habilidoso e leal.</p>
+          <p class="text-small">Esses heróis relutantes devem superar suas diferenças e aprender a trabalhar em equipe para enfrentar o formidável exército de Loki. Em meio a cenas de ação espetaculares e diálogos simultâneos, somos transportados para um mundo onde as habilidades sobre-humanas são combinadas com inteligência estratégica e coragem indomável.</p>
+          <p class="text-small">"Os Vingadores" não é apenas um filme de super-heróis; é uma celebração do poder da união e do heroísmo. É uma ode aos fãs de longa data que cresceram lendo as histórias em quadrinhos da Marvel e aos recém-chegados que se apaixonaram por esses personagens icônicos.</p>
+          <p class="text-small">Com uma trama emocionante, efeitos visuais espetaculares e interpretados brilhantemente, "Os Vingadores" de 2012 deixou uma marca indelével na cultura pop. Ele estabeleceu um padrão para os filmes de super-heróis e mostrou ao mundo que histórias em quadrinhos podem ganhar vida na tela grande de maneiras empolgantes e emocionantes.</p>
+          <p class="text-small">Então prepare-se para se juntar à luta, testemunhar a camaradagem e a ação desenfreada de "Os Vingadores". Esteja preparado para ser cativado por uma aventura épica que lembraremos por muitos anos como o momento em que nossos heróis favoritos se uniram pela primeira vez e nos admiramos o que é ser verdadeiro super.</p>
+        </div>
+
+        <div data-tab-id="ultron" class="movies__content">
+          <img src="./dist/img/banner_era_de_ultron.jfif" alt="Banner filme: Vingadores - Era de Ultron">
+          <h2 class="title--small">Sobre o filme</h2>
+          <p class="text-small">Em "Os Vingadores: Era de Ultron", prepare-se para uma nova dose de ação frenética e reviravoltas emocionantes. Neste capítulo eletrizante da saga dos Vingadores, nossos heróis enfrentam uma ameaça tecnológica implacável que promete abalar as fundações do mundo.</p>
+          <p class="text-small">Dirigido por Joss Whedon, o filme mergulhado na história de Ultron, uma inteligência artificial criada por Tony Stark em uma tentativa de proteger a humanidade. No entanto, como as coisas não saem como planejadas, e Ultron se volta contra seus criadores, decidiu eliminar a raça humana e reconstruir o mundo à sua própria imagem distorcida.</p>
+          <p class="text-small">Enquanto Ultron planeja sua vingança, os Vingadores se veem enfrentando um inimigo implacável e forças internas que testam sua lealdade e união. A equipe é apresentada a novos aliados poderosos, como os irmãos Maximoff, Wanda e Pietro, também conhecidos como Feiticeira Escarlate e Mercúrio. Juntos, eles devem superar desafios pessoais e traumas do passado para lutar contra a ameaça iminente.</p>
+          <p class="text-small">A batalha épica entre os Vingadores e Ultron leva os espectadores a lugares inesperados e apresenta cenas de ação de tirar o livro. Enquanto as cidades tremem e o destino da humanidade pende por um fio, uma equipe de heróis se vê confrontada com escolhas difíceis e sofrimentos que podem mudar tudo.</p>
+          <p class="text-small">"Os Vingadores: Era de Ultron" é uma montanha-russa emocional, combinando sequências de ação emocionantes com momentos de reflexão e desenvolvimento dos personagens. O filme explora temas como a responsabilidade de nossas criações, os limites da tecnologia e as consequências das escolhas que fazemos.</p>
+          <p class="text-small">Além disso, somos apresentados a um novo nível de complexidade nas relações entre os Vingadores. Amizades são testadas, romances florescem e alianças improváveis ​​se formam. A dinâmica entre os personagens nos leva a uma viagem emocional, mostrando que, mesmo sendo heróis poderosos, eles são seres humanos com medos e fraquezas.</p>
+          <p class="text-small">"Os Vingadores: Era de Ultron" continua a expandir o universo Marvel nos cinemas, trazendo um novo capítulo emocionante e imprevisível para a história dos nossos heróis favoritos. Prepare-se para se surpreender, se emocionar e se emocionar enquanto os Vingadores enfrentam uma das batalhas mais desafiadoras de suas vidas. Esteja pronto para testemunhar a evolução da equipe e dos novos heróis em uma narrativa empolgante que vai deixar-lo ansioso pelo próximo capítulo desta saga extraordinária.</p>
+        </div>
+        <div data-tab-id="guerra_infinita" class="movies__content">
+          <img src="./dist/img/banner_guerra_infinita.jfif" alt="Banner filme: Vingadores - Guerra Infinita">
+          <h2 class="title--small">Sobre o filme</h2>
+          <p class="text-small">Em "Os Vingadores: Guerra Infinita", prepare-se para uma jornada de emoções cósmicas e um confronto que definirá o destino do universo. Neste épico cinematográfico, nossos heróis se unem como nunca antes para enfrentar a ameaça mais devastadora que já encontrou.</p>
+          <p class="text-small">Sob direção dos irmãos Russo, o filme nos leva a um encontro com Thanos, um tirano implacável determinado a reunir as seis Joias do Infinito e usar seu poder para trazer equilíbrio ao universo, não importando o custo. Em sua busca pela dominação total, Thanos deixa um rastro de destruição, desafiando os Vingadores e seus aliados a reunirem forças e lutarem como nunca antes.</p>
+          <p class="text-small">Ao longo da trama, somos levados a diferentes cantos do universo, testemunhando a união de personagens icônicos como Homem de Ferro, Capitão América, Thor, Hulk, Viúva Negra, Gavião Arqueiro, Doutor Estranho, Pantera Negra e muitos outros. Eles devem superar diferenças e divergências pessoais para se tornarem a última linha de defesa contra o implacável exército de Thanos.</p>
+          <p class="text-small">"Os Vingadores: Guerra Infinita" é um turbilhão de ação, emoção e reviravoltas. Cada cena é uma batalha épica, cada momento é uma corrida contra o tempo. A narrativa nos mantém na beira do assento, sem saber o que esperar a seguir, enquanto nossos heróis enfrentam desafios impossíveis e sofrimentos dolorosos.</p>
+          <p class="text-small">A profundidade emocional do filme é uma marca registrada, trazendo à tona a humanidade e vulnerabilidade dos personagens que admiramos. É uma história sobre esperança, coragem e resiliência do espírito humano diante da adversidade esmagadora.</p>
+          <p class="text-small">"Os Vingadores: Guerra Infinita" marca um ponto de virada no universo Marvel, estabelecendo um novo patamar para os filmes de super-heróis. É uma celebração da grandiosidade dos quadrinhos, trazendo à vida um épico de escala cósmica que nos mantém grudados na tela até o último segundo.</p>
+          <p class="text-small">Esteja preparado para se surpreender, chorar, torcer e se maravilhar com cada cena de ação extraordinária, diálogos marcantes e reviravoltas emocionantes. "Os Vingadores: Guerra Infinita" é uma montanha-russa emocional que nos leva a uma viagem inesquecível pelo universo Marvel, deixando-nos ansiando pela conclusão épica que está por vir.</p>
+        </div>
+        <div data-tab-id="ultimato" class="movies__content">
+          <img src="./dist/img/banner_ultimato.jfif" alt="Banner filme: Vingadores - Ultimato">
+          <h2 class="title--small">Sobre o filme</h2>
+          <p class="text-small">Prepare-se para testemunhar o ápice de uma saga épica em "Os Vingadores: Ultimato". Este filme fenomenal marca o ponto culminante de uma jornada de mais de uma década, trazendo aos fãs uma conclusão emocionante e satisfatória para a batalha contra o destino.</p>
+          <p class="text-small">Sob a direção dos irmãos Russo, "Os Vingadores: Ultimato" nos leva a um mundo onde nossos heróis estão despedaçados após os eventos devastadores de "Guerra Infinita". Thanos triunfou e eliminou metade da vida no universo com um estalar de dedos, deixando os Vingadores e seus aliados em um estado de dor e desespero.</p>
+          <p class="text-small">Mas a esperança não está perdida. Com a chegada de uma oportunidade de mudar o passado e desfazer as ações de Thanos, os Vingadores se unem novamente, unindo forças com heróis de todas as partes do universo. Essa última chance de restaurar o equilíbrio e trazer de volta aqueles que foram perdidos, impulsionados pelos heróis a enfrentarem seus medos, superarem suas diferenças e lutarem como nunca antes.</p>
+          <p class="text-small">"Os Vingadores: Ultimato" é uma experiência cinematográfica intensa, repleta de ação espetacular, momentos de pura emoção e surpresas emocionantes. Cada cena é cuidadosamente elaborada para levar os espectadores a uma montanha-russa de sentimentos, enquanto testemunhamos o sofrimento, a redenção e a resiliência dos personagens que tanto amamos.</p>
+          <p class="text-small">O filme é uma homenagem aos fãs dedicados que acompanharam essa jornada extraordinária desde o início. Ele amarra pontas soltas, resgatou personagens marcantes e recompensou a devoção dos fãs com momentos de grande impacto emocional. É um tributo à força da união e ao poder da perseverança.</p>
+          <p class="text-small">"Os Vingadores: Ultimato" é um épico cinematográfico que vai além de ser apenas um filme de super-heróis. É uma história de amizade, família e heroísmo que nos lembra que, mesmo em face das adversidades mais abandonadas, a esperança pode prevalecer.</p>
+          <p class="text-small">Esteja preparado para se despedir de personagens icônicos, comemorar vitórias memoráveis ​​e sentir o coração acelerar com cada reviravolta surpreendente. "Os Vingadores: Ultimato" é um evento cinematográfico que não só encerra uma era, mas também marca o início de um novo capítulo no universo Marvel.</p>
+          <p class="text-small">Então, reúna-se uma última vez com os Vingadores, embarque nesta jornada épica e prepare-se para uma experiência inesquecível de cinema. "Os Vingadores: Ultimato" é uma conclusão emocionante que vai ecoar por muito tempo, deixando uma marca indelével na história dos filmes de super-heróis.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <div class="container">
+        <h2 class="title">Perguntas Frequentes</h2>
+        <ul class="faq__questions">
+          <li class="faq__questions__item">
+            <div class="faq__questions__item__question" data-faq-question>
+              Quais sãos os quatro filmes do Vingadores?
+            </div>
+            <div class="faq__questions__item__answer">
+              <ul>
+                <li>Os Vingadores</li>
+                <li>Vingadores: Era de Ultron</li>
+                <li>Vingadores: Guerra Infinita</li>
+                <li>Vingadores: Ultimato</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="faq__questions__item">
+            <div class="faq__questions__item__question" data-faq-question>
+              Quais sãos os quatro filmes do Vingadores?
+            </div>
+            <div class="faq__questions__item__answer">
+              <ul>
+                <li>Os Vingadores</li>
+                <li>Vingadores: Era de Ultron</li>
+                <li>Vingadores: Guerra Infinita</li>
+                <li>Vingadores: Ultimato</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="faq__questions__item">
+            <div class="faq__questions__item__question" data-faq-question>
+              Quais sãos os quatro filmes do Vingadores?
+            </div>
+            <div class="faq__questions__item__answer">
+              <ul>
+                <li>Os Vingadores</li>
+                <li>Vingadores: Era de Ultron</li>
+                <li>Vingadores: Guerra Infinita</li>
+                <li>Vingadores: Ultimato</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
     
+    <script src="./dist/scripts/main.js"></script>
 </body>
 </html>
