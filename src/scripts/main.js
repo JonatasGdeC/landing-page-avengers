@@ -2,35 +2,6 @@ document.addEventListener('DOMContentLoaded', function(){
     const buttonsMovies = document.querySelectorAll('[data-tab-button]');
     const questions = document.querySelectorAll('[data-faq-question]');
 
-    const alturaSobre = document.querySelector('.about').clientHeight;
-    const alturaFilmes = document.querySelector('.movies').clientHeight;
-    const alturaFaq = document.querySelector('.faq').clientHeight;
-
-    window.addEventListener('scroll', function(){
-        const posicaoAtual = window.scrollY;
-
-
-        const links = document.querySelectorAll('.header__list__item a');
-
-        if(posicaoAtual<alturaSobre){
-            links[0].style.color='#fff'
-        } else{
-            links[0].style.color='red'
-        }
-
-        if(posicaoAtual<alturaFilmes&&posicaoAtual>alturaSobre){
-            links[1].style.color='#fff'
-        }else{
-            links[1].style.color='red'
-        }
-
-        if(posicaoAtual<=alturaFaq&&posicaoAtual>alturaFilmes){
-            links[2].style.color='#fff'
-        }else{
-            links[2].style.color='red'
-        }
-        
-    })
 
     for(let i = 0; i<buttonsMovies.length; i++){
         buttonsMovies[i].addEventListener('click', function(botao){

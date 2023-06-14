@@ -3,6 +3,10 @@
         display: flex;
         justify-content: space-between;
 
+        @media (max-width: 700px){
+            flex-direction: column;
+        }
+
         button{
             color: #fff;
             background-color: transparent;
@@ -22,6 +26,9 @@
     &__content{
         display: none;
 
+        img{
+            width: 100%;
+        }
         h2{
             margin: 16px 0;
         }

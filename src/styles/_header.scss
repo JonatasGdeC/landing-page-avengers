@@ -10,8 +10,13 @@
     left: 0;
     z-index: 2;
 
+    @media(max-width:595px){
+        flex-direction: column;
+        padding: 16px;
+    }
+
     &__logo{
-        width: 240px;
+        width: 160px;
     }
 
     &__list{
@@ -28,16 +33,10 @@
                 transition: all ease .5s;
 
                 &:hover{
-                    color: #fff;
                     font-size: 16.5px;
                     text-decoration: underline;
                 }
 
-                .--is-hover{
-                    color: #fff;
-                    font-size: 16.5px;
-                    text-decoration: underline;
-                }
             }
         }
     }
